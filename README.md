@@ -10,7 +10,7 @@ You can also access the mailbox via the webmail service which is exposed on port
 docker run -d \
 -e MAILCATCHER_USERNAME=mailcatcher \
 -e MAILCATCHER_PASSWORD=mailcatcher \
--p 1080:80 -p 1025:25
+-p 1080:80 -p 1025:25 \
 estelora/docker-mailcatcher-imap
 ```
 
