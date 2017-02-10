@@ -11,7 +11,7 @@ docker run -d \
 -e MAILCATCHER_USERNAME=mailcatcher \
 -e MAILCATCHER_PASSWORD=mailcatcher \
 -p 1080:80 -p 1025:25
-estelora/mailcatcher
+estelora/docker-mailcatcher-imap
 ```
 
 # docker-mailcatcher-imap
