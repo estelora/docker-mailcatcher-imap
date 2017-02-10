@@ -7,7 +7,7 @@ ENV	ROUNDCUBE_INSTALLDIR /var/www/html
 # install required packages
 RUN	apt-get update -qq && \
 	echo 'courier-base courier-base/webadmin-configmode boolean false' | debconf-set-selections && \
-	apt-get -y install curl exim4 courier-imap supervisor apache2 php5 php5-sqlite php5-mysqlnd && \
+	apt-get -y install curl exim4 courier-imap courier-imap-ssl supervisor apache2 php5 php5-sqlite php5-mysqlnd && \
 	apt-get clean autoclean && \
 	apt-get autoremove --yes && \
 	rm -rf /var/lib/{apt,dpkg,cache,log}/
