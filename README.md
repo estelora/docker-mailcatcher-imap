@@ -1,8 +1,12 @@
-# docker-mailcatcher-imap
+# mailcatcher-imap
 
-This docker container can be use to send emails via SMTP and route all incoming SMTP traffic to a single mailbox which can be accessed via IMAP.
+This docker container can be used to send emails via SMTP and routes all incoming SMTP traffic to a single mailbox.
 
-You can also access the mailbox via the webmail service which is exposed on port 80.
+You can access this mail via IMAP protocol.
+
+Sometimes for testing purposes, ssl is necessary! I needed this to make email testing fast with imaps and a the Java imaps mail api (which ran on Selenium Webdriver).
+
+You can also access the mailbox via the webmail service which is exposed on port 1080, if you follow the example run below.
 
 ## Example Run
 
@@ -11,7 +15,7 @@ docker run -d \
 -e MAILCATCHER_USERNAME=mailcatcher \
 -e MAILCATCHER_PASSWORD=mailcatcher \
 -p 1080:80 -p 1025:25 \
-estelora/docker-mailcatcher-imap
+estelora/mailcatcher-imap
 ```
 
-# docker-mailcatcher-imap
+> Forked from [hauptmedia/docker-mailcatcher](https://github.com/hauptmedia/docker-mailcatcher)
