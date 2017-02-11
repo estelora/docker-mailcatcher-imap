@@ -4,7 +4,7 @@ This docker container can be used to send emails via SMTP and routes all incomin
 
 You can access this mail via IMAP protocol.
 
-Sometimes for testing purposes, ssl is necessary! I needed this to make email testing fast with imaps and a the Java imaps mail api (which ran on Selenium Webdriver).
+Sometimes for testing purposes, ssl is necessary! I needed this to make email testing fast with imaps and a the [java imap mail api](https://javamail.java.net/nonav/docs/api/com/sun/mail/imap/package-summary.html) (which ran on Selenium Webdriver).
 
 You can also access the mailbox via the webmail service which is exposed on port 1080, if you follow the example run below.
 
